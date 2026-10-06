@@ -1,0 +1,17 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup and draft html files
+index.pre-*.html
+index.backup.html
+
+# Raw large source media and unoptimized duplicates (>100MB / non-web)
+*.mov
+*copie.mp4
+assets/*.mov
+assets/methodologie-video.mov
+Nira-film-v3 copie.mp4
+imagelst.png
+Image ChatGPT*
+4ULaFYtbn*
