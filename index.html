@@ -10,11 +10,14 @@
   <meta property="og:site_name" content="Nira Consulting" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=45" />
+  <link rel="stylesheet" href="css/style.css?v=48" />
 </head>
 <body>
 
@@ -90,12 +93,12 @@
         <button class="nav__link dd__trigger" aria-expanded="false" aria-controls="dd-cas">Cas d'usage <svg class="ic ic--sm"><use href="#i-down"/></svg></button>
         <div class="dd__panel dd__panel--wide" id="dd-cas">
           <div class="dd__grid dd__grid--2">
-            <a class="dd__item" href="#uc-leads"><span class="dd__icon"><svg class="ic"><use href="#i-users"/></svg></span><span><strong>Leads &amp; CRM</strong><small>Enrichissement et qualification par IA</small></span></a>
-            <a class="dd__item" href="#uc-docs"><span class="dd__icon"><svg class="ic"><use href="#i-file"/></svg></span><span><strong>Documents &amp; Data</strong><small>Extraction depuis PDF, factures, contrats</small></span></a>
-            <a class="dd__item" href="#uc-support"><span class="dd__icon"><svg class="ic"><use href="#i-headset"/></svg></span><span><strong>Support Client</strong><small>Qualification des tickets et escalade</small></span></a>
-            <a class="dd__item" href="#uc-ops"><span class="dd__icon"><svg class="ic"><use href="#i-workflow"/></svg></span><span><strong>Opérations Internes</strong><small>Onboarding, congés, synchronisation</small></span></a>
-            <a class="dd__item" href="#uc-reporting"><span class="dd__icon"><svg class="ic"><use href="#i-bars"/></svg></span><span><strong>Reporting &amp; Veille</strong><small>Rapports consolidés et alertes KPI</small></span></a>
-            <a class="dd__item" href="#uc-handoffs"><span class="dd__icon"><svg class="ic"><use href="#i-link"/></svg></span><span><strong>Handoffs inter-outils</strong><small>La glu entre vos logiciels</small></span></a>
+            <a class="dd__item" href="#uc-factures"><span class="dd__icon"><svg class="ic"><use href="#i-file"/></svg></span><span><strong>Factures</strong><small>Lues par l'IA et saisies à votre place</small></span></a>
+            <a class="dd__item" href="#uc-contacts"><span class="dd__icon"><svg class="ic"><use href="#i-users"/></svg></span><span><strong>Nouveaux contacts</strong><small>Triés et transmis au bon commercial</small></span></a>
+            <a class="dd__item" href="#uc-questions"><span class="dd__icon"><svg class="ic"><use href="#i-headset"/></svg></span><span><strong>Questions reçues</strong><small>Classées, avec une réponse proposée</small></span></a>
+            <a class="dd__item" href="#uc-relances"><span class="dd__icon"><svg class="ic"><use href="#i-bell"/></svg></span><span><strong>Relances prospects</strong><small>Envoyées au bon moment, sans oubli</small></span></a>
+            <a class="dd__item" href="#uc-appels-offres"><span class="dd__icon"><svg class="ic"><use href="#i-target"/></svg></span><span><strong>Appels d'offres</strong><small>Lus par l'IA, premier jet rédigé</small></span></a>
+            <a class="dd__item" href="#uc-logiciel"><span class="dd__icon"><svg class="ic"><use href="#i-workflow"/></svg></span><span><strong>Logiciel sur mesure</strong><small>Tous vos outils sur un seul écran</small></span></a>
           </div>
           <a class="dd__feature js-open-video" href="#video-modal">
             <span class="dd__feature-tag">Anatomie d'une automatisation</span>
@@ -104,7 +107,7 @@
           </a>
         </div>
       </div>
-      <a class="nav__link" href="#impact">Impact</a>
+      <a class="nav__link" href="#realisations">Impact</a>
       <a class="nav__link" href="#faq">FAQ</a>
     </nav>
 
@@ -118,7 +121,7 @@
   <div class="mobile" id="mobile-menu" hidden>
     <a href="#approche">Approche</a>
     <a href="#cas-d-usage">Cas d'usage</a>
-    <a href="#impact">Impact</a>
+    <a href="#realisations">Impact</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
     <a class="btn" href="https://calendly.com/valentino-nira-ia/30min" target="_blank" rel="noopener"><span class="btn__label">Demander un audit</span><span class="btn__arrow"><svg class="ic"><use href="#i-arrow"/></svg></span></a>
@@ -143,7 +146,10 @@
 
     <div class="hero__visual reveal" aria-hidden="true">
       <div class="hero__disc">
-        <img src="assets/hero-portrait-crop-fade-1200.png?v=4" alt="Collaborateur Nira utilisant l'IA" width="1200" height="1288" />
+        <picture>
+          <source type="image/webp" srcset="assets/hero-portrait-crop-fade-750.webp 750w, assets/hero-portrait-crop-fade-1200.webp 1200w" sizes="(max-width: 640px) 80vw, 490px" />
+          <img src="assets/hero-portrait-crop-fade-1200.png?v=4" alt="Collaborateur Nira utilisant l'IA" width="1200" height="1288" />
+        </picture>
       </div>
     </div>
   </div>
@@ -165,7 +171,7 @@
         <span class="round"><svg class="ic ic--sm"><use href="#i-arrow"/></svg></span>
       </a>
       <a class="trust__card" href="#cas-d-usage">
-        <span><strong>Cas d'usage concrets</strong><small>Leads, documents, support, opérations, reporting</small></span>
+        <span><strong>Cas d'usage concrets</strong><small>Factures, contacts, support, relances, appels d'offres</small></span>
         <span class="round"><svg class="ic ic--sm"><use href="#i-arrow"/></svg></span>
       </a>
     </div>
@@ -189,9 +195,9 @@
       </div>
       <div class="method__social">
         <div class="social-reel-wrapper">
-          <button type="button" class="social-reel js-open-video" aria-haspopup="dialog" aria-controls="video-modal-method">
-            <video src="assets/methodologie-video.mp4" autoplay loop muted playsinline class="social-reel__vid"></video>
-            
+          <button type="button" class="social-reel js-open-video" aria-haspopup="dialog" aria-controls="video-modal-method" aria-label="Voir la vidéo : notre méthode expliquée">
+            <video src="assets/methodologie-preview.mp4" poster="assets/methodologie-poster.jpg" loop muted playsinline preload="none" class="social-reel__vid" aria-hidden="true"></video>
+
             <div class="social-reel__overlay">
               <div class="social-reel__play"><svg class="ic"><use href="#i-play"/></svg></div>
             </div>
@@ -245,56 +251,56 @@
 </section>
 
 <!-- ============ EXEMPLES D'AUTOMATISATIONS (dark, onglets) ============ -->
-<section class="section section--deep" id="comment">
+<section class="section section--deep" id="cas-d-usage" aria-labelledby="how-title">
   <div class="container">
     <div class="how__head">
       <div>
         <span class="badge-strip"><svg class="ic ic--sm"><use href="#i-search"/></svg> Trouvé lors de nos audits</span>
-        <h2 class="h2 h2--light">Des exemples de tâches qu'on automatise</h2>
+        <h2 class="h2 h2--light" id="how-title">Des exemples de tâches qu'on automatise</h2>
         <p class="how__lead">Choisissez un exemple pour voir, étape par étape, ce qui se passe.</p>
       </div>
       <div class="tabs" role="tablist" aria-label="Exemples d'automatisations">
-        <button class="tab is-active" role="tab" aria-selected="true" data-tab="0">Factures</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="1">Nouveaux contacts</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="2">Questions reçues</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="3">Relances prospects</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="4">Appels d'offres</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="5">Logiciel sur mesure</button>
+        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="uc-panel-0" id="uc-factures" data-tab="0">Factures</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="uc-panel-1" id="uc-contacts" data-tab="1" tabindex="-1">Nouveaux contacts</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="uc-panel-2" id="uc-questions" data-tab="2" tabindex="-1">Questions reçues</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="uc-panel-3" id="uc-relances" data-tab="3" tabindex="-1">Relances prospects</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="uc-panel-4" id="uc-appels-offres" data-tab="4" tabindex="-1">Appels d'offres</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="uc-panel-5" id="uc-logiciel" data-tab="5" tabindex="-1">Logiciel sur mesure</button>
       </div>
     </div>
 
-    <p class="how__before" id="how-before"><b>Avant</b> Chaque facture était recopiée à la main.</p>
-    <div class="steps" data-panel="0">
+    <p class="how__before" id="how-before" aria-live="polite"><b>Avant</b> Chaque facture était recopiée à la main.</p>
+    <div class="steps" data-panel="0" id="uc-panel-0" role="tabpanel" aria-labelledby="uc-factures">
       <article class="step"><span class="step__n">1</span><h3>La facture arrive par email</h3><p>Elle est repérée tout de suite.</p></article>
       <article class="step"><span class="step__n">2</span><h3>L'IA la lit</h3><p>Elle relève le montant, la TVA et le fournisseur.</p></article>
       <article class="step"><span class="step__n">3</span><h3>Votre logiciel est rempli</h3><p>Les infos sont saisies à votre place.</p></article>
       <article class="step"><span class="step__n">4</span><h3>Tout est vérifié</h3><p>En cas de doute, une personne est prévenue.</p></article>
     </div>
-    <div class="steps" data-panel="1" hidden>
+    <div class="steps" data-panel="1" id="uc-panel-1" role="tabpanel" aria-labelledby="uc-contacts" hidden>
       <article class="step"><span class="step__n">1</span><h3>Quelqu'un remplit votre formulaire</h3><p>Sa demande arrive tout de suite.</p></article>
       <article class="step"><span class="step__n">2</span><h3>L'IA la trie</h3><p>Elle repère les demandes les plus importantes.</p></article>
       <article class="step"><span class="step__n">3</span><h3>Le bon commercial est prévenu</h3><p>Avec toutes les infos pour rappeler vite.</p></article>
       <article class="step"><span class="step__n">4</span><h3>Votre fichier est à jour</h3><p>Aucun contact ne se perd.</p></article>
     </div>
-    <div class="steps" data-panel="2" hidden>
+    <div class="steps" data-panel="2" id="uc-panel-2" role="tabpanel" aria-labelledby="uc-questions" hidden>
       <article class="step"><span class="step__n">1</span><h3>Une question arrive</h3><p>Email, chat ou formulaire : tout arrive au même endroit.</p></article>
       <article class="step"><span class="step__n">2</span><h3>L'IA la classe</h3><p>Elle repère le sujet et l'urgence.</p></article>
       <article class="step"><span class="step__n">3</span><h3>Une réponse est proposée</h3><p>Votre équipe la valide en un clic.</p></article>
       <article class="step"><span class="step__n">4</span><h3>Les cas difficiles remontent</h3><p>À la bonne personne, sans oubli.</p></article>
     </div>
-    <div class="steps" data-panel="3" hidden>
+    <div class="steps" data-panel="3" id="uc-panel-3" role="tabpanel" aria-labelledby="uc-relances" hidden>
       <article class="step"><span class="step__n">1</span><h3>Un devis est envoyé</h3><p>Le suivi démarre tout seul.</p></article>
       <article class="step"><span class="step__n">2</span><h3>Pas de réponse ?</h3><p>Une relance personnalisée part au bon moment.</p></article>
       <article class="step"><span class="step__n">3</span><h3>L'IA lit les réponses</h3><p>Elle repère qui est vraiment intéressé.</p></article>
       <article class="step"><span class="step__n">4</span><h3>Le commercial reprend la main</h3><p>Il appelle les bonnes personnes, au bon moment.</p></article>
     </div>
-    <div class="steps" data-panel="4" hidden>
+    <div class="steps" data-panel="4" id="uc-panel-4" role="tabpanel" aria-labelledby="uc-appels-offres" hidden>
       <article class="step"><span class="step__n">1</span><h3>L'appel d'offres arrive</h3><p>L'IA lit tout le cahier des charges.</p></article>
       <article class="step"><span class="step__n">2</span><h3>Les points clés sont relevés</h3><p>Délais, critères et documents à fournir.</p></article>
       <article class="step"><span class="step__n">3</span><h3>Un premier jet est rédigé</h3><p>À partir de vos anciennes réponses.</p></article>
       <article class="step"><span class="step__n">4</span><h3>Votre équipe relit et valide</h3><p>Elle garde toujours le dernier mot.</p></article>
     </div>
-    <div class="steps" data-panel="5" hidden>
+    <div class="steps" data-panel="5" id="uc-panel-5" role="tabpanel" aria-labelledby="uc-logiciel" hidden>
       <article class="step"><span class="step__n">1</span><h3>On fait le tour de vos outils</h3><p>Et des infos éparpillées entre eux.</p></article>
       <article class="step"><span class="step__n">2</span><h3>On crée votre logiciel</h3><p>Simple, pensé pour votre métier.</p></article>
       <article class="step"><span class="step__n">3</span><h3>Tout est au même endroit</h3><p>Contacts, documents, suivi : un seul écran.</p></article>
@@ -340,7 +346,7 @@
             <button type="button" class="geo__pin" data-id="be" style="left:48.43%;top:21.28%;--i:1" aria-label="TAC Industries"><span class="geo__tip"><img src="assets/flags/be.svg" alt="" width="16" height="16" /><img class="geo__logo" src="assets/logos/tac.png" style="--h:22px" alt="TAC Industries" /></span></button>
             <button type="button" class="geo__pin" data-id="us" style="left:20.83%;top:30.29%;--i:2" aria-label="PerfectServe"><span class="geo__tip"><img src="assets/flags/us.svg" alt="" width="16" height="16" /><img class="geo__logo" src="assets/logos/perfectserve.svg" style="--h:18px" alt="PerfectServe" /></span></button>
             <button type="button" class="geo__pin" data-id="ma" style="left:45.11%;top:34.60%;--i:3" aria-label="PillQare"><span class="geo__tip"><img src="assets/flags/ma.svg" alt="" width="16" height="16" /><img class="geo__logo" src="assets/logos/pillqare.png" style="--h:20px" alt="PillQare" /></span></button>
-            <button type="button" class="geo__pin" data-id="my" style="left:75.56%;top:55.75%;--i:4" aria-label="Projet en Malaisie"><span class="geo__tip"><img src="assets/flags/my.svg" alt="" width="16" height="16" /><span class="geo__soon">Bientôt</span></span></button>
+            <button type="button" class="geo__pin" data-id="my" style="left:75.56%;top:55.75%;--i:4" aria-label="Collektr"><span class="geo__tip"><img src="assets/flags/my.svg" alt="" width="16" height="16" /><img class="geo__logo" src="assets/logos/collektr.svg" style="--h:14px" alt="Collektr" /></span></button>
           </div>
         </div>
       </div>
@@ -405,10 +411,13 @@
             </dl>
           </article>
           <article class="case" data-id="my" hidden>
-            <div class="case__logo case__logo--soon"><svg class="ic"><use href="#i-lock"/></svg>Nom bientôt dévoilé</div>
-            <p class="case__meta"><img class="geo__flag geo__flag--sm" src="assets/flags/my.svg" alt="" width="18" height="18" />Malaisie</p>
-            <h3>Projet présenté très bientôt</h3>
-            <p class="case__soon">Un projet est en cours en Malaisie. On le présentera ici dès qu'il pourra être rendu public.</p>
+            <div class="case__logo"><img src="assets/logos/collektr.svg" alt="Collektr" style="height:24px" /></div>
+            <p class="case__meta"><img class="geo__flag geo__flag--sm" src="assets/flags/my.svg" alt="" width="18" height="18" />Malaisie · Cartes à collectionner</p>
+            <h3>Répondre aux prospects et trouver l'info plus vite</h3>
+            <ul class="case__did">
+              <li>Réponse automatique aux prospects sur WhatsApp</li>
+              <li>Sourcing d'informations automatisé</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -438,7 +447,7 @@
 </section>
 
 <!-- ============ USE CASES (alternating rows) ============ -->
-<section class="section" id="cas-d-usage" hidden>
+<section class="section" id="cas-d-usage-archive" hidden>
   <div class="container">
     <h2 class="h2 center narrow reveal">Des automatisations connectées qui orchestrent le travail en coulisses, dans chaque département</h2>
 
@@ -621,8 +630,8 @@
     <button class="quotes__nav quotes__nav--prev" aria-label="Témoignage précédent"><svg class="ic"><use href="#i-left"/></svg></button>
     <button class="quotes__nav quotes__nav--next" aria-label="Témoignage suivant"><svg class="ic"><use href="#i-right"/></svg></button>
     <div class="quotes__chips">
-      <button class="qchip is-on" data-go="0"><b>Safir Hanafi</b> PillQare</button>
-      <button class="qchip" data-go="1"><b>Farid Boumkais</b> 4success Groupe</button>
+      <button class="qchip is-on" data-go="0" aria-pressed="true"><b>Safir Hanafi</b> <span>PillQare</span></button>
+      <button class="qchip" data-go="1" aria-pressed="false"><b>Farid Boumkais</b> <span>4success Groupe</span></button>
     </div>
   </div>
 </section>
@@ -681,7 +690,7 @@
       </div>
       <a class="final__link" href="#cas-d-usage">
         <strong>Voir nos cas d'usage <span class="round round--dark round--xs"><svg class="ic ic--sm"><use href="#i-arrow"/></svg></span></strong>
-        <small>Six départements, des automatisations concrètes.</small>
+        <small>Six exemples concrets, expliqués étape par étape.</small>
       </a>
     </div>
     <div class="final__stats reveal">
@@ -699,19 +708,20 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="#" aria-label="Nira, accueil"><img src="assets/logo.png?v=2" alt="Nira" class="footer__logo-img" width="96" height="96" /></a>
+        <a href="#" aria-label="Nira, accueil"><img src="assets/logo.png?v=2" alt="Nira" class="footer__logo-img" width="160" height="40" loading="lazy" /></a>
         <p class="footer__tag">L'agence d'automatisation nouvelle génération</p>
-        <div class="footer__social">
-          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
-          <a href="https://x.com" target="_blank" rel="noopener" aria-label="Twitter / X"><svg class="ic"><use href="#i-x"/></svg></a>
+        <!-- Réseaux sociaux : masqués tant que les vraies URL ne sont pas renseignées (remplacer les href puis retirer "hidden") -->
+        <div class="footer__social" hidden>
+          <a href="https://www.linkedin.com/company/A-COMPLETER" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+          <a href="https://x.com/A-COMPLETER" target="_blank" rel="noopener" aria-label="Twitter / X"><svg class="ic"><use href="#i-x"/></svg></a>
         </div>
         <p class="footer__pitch">Nous transformons vos processus complexes en workflows parfaitement huilés grâce à l'IA.</p>
         <a class="footer__cta" href="https://calendly.com/valentino-nira-ia/30min" target="_blank" rel="noopener">Réserver un audit de 30 min <span class="round round--xs"><svg class="ic ic--sm"><use href="#i-arrow"/></svg></span></a>
       </div>
       <div class="footer__cols">
-        <div><h4>Agence</h4><a href="#approche">Notre approche</a><a href="#cas-d-usage">Cas d'usage</a><a href="#impact">Impact &amp; ROI</a><a href="#impact">Pourquoi Nira ?</a><a href="#faq">FAQ</a></div>
-        <div><h4>Cas d'usage</h4><a href="#uc-leads">Leads &amp; CRM</a><a href="#uc-docs">Documents &amp; Data</a><a href="#uc-support">Support Client</a><a href="#uc-ops">Opérations Internes</a><a href="#uc-reporting">Reporting &amp; Veille</a><a href="#uc-handoffs">Handoffs inter-outils</a></div>
-        <div><h4>Légal</h4><a href="/mentions-legales">Mentions légales</a><a href="/politique-de-confidentialite">Politique de confidentialité</a><a href="/cgv">CGV</a><h4 class="mt">Contact</h4><a href="https://calendly.com/valentino-nira-ia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></div>
+        <div><h4>Agence</h4><a href="#approche">Notre approche</a><a href="#cas-d-usage">Cas d'usage</a><a href="#realisations">Impact &amp; ROI</a><a href="#impact">Pourquoi Nira ?</a><a href="#faq">FAQ</a></div>
+        <div><h4>Cas d'usage</h4><a href="#uc-factures">Factures</a><a href="#uc-contacts">Nouveaux contacts</a><a href="#uc-questions">Questions reçues</a><a href="#uc-relances">Relances prospects</a><a href="#uc-appels-offres">Appels d'offres</a><a href="#uc-logiciel">Logiciel sur mesure</a></div>
+        <div><h4>Légal</h4><a href="mentions-legales.html">Mentions légales</a><a href="politique-de-confidentialite.html">Politique de confidentialité</a><a href="cgv.html">CGV</a><h4 class="mt">Contact</h4><a href="https://calendly.com/valentino-nira-ia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></div>
       </div>
     </div>
     <div class="footer__bottom">
@@ -719,7 +729,7 @@
       <span>Fait avec ♥ à Paris.</span>
     </div>
   </div>
-  <div class="footer__watermark" aria-hidden="true"><img src="assets/logo.png?v=2" alt="" style="height: 1em; width: auto;" /></div>
+  <div class="footer__watermark" aria-hidden="true"><img src="assets/logo.png?v=2" alt="" width="3168" height="792" loading="lazy" /></div>
 </footer>
 
 <!-- Video Modal -->
@@ -735,7 +745,7 @@
     </div>
     <div class="video-modal__player">
       <video id="nira-video" playsinline controls preload="metadata">
-        <source src="assets/nira-film.mp4" type="video/mp4" />
+        <source src="https://spvlsmzldkzyjdum.public.blob.vercel-storage.com/videos/nira-film-v5.mp4" type="video/mp4" />
         Votre navigateur ne prend pas en charge la lecture de cette vidéo.
       </video>
     </div>
@@ -761,6 +771,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=10" defer></script>
+<script src="js/main.js?v=12" defer></script>
 </body>
 </html>
