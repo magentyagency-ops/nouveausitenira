@@ -1265,3 +1265,13 @@ button.pill {
 /* The method reel is French only: English shows the written steps alone */
 html[lang="en"] .method__social { display: none; }
 html[lang="en"] .method__top { grid-template-columns: 1fr; }
+
+/* Hero "watch the film" button: more visible */
+.pill.hero-play { gap: 12px; padding: 6px 18px 6px 6px; font-size: 15px; font-weight: 600; background: #fff; box-shadow: 0 0 0 1px var(--sky-200), 0 10px 24px rgba(10,25,47,.10); }
+.hero-play__icon { position: relative; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--blue); }
+.pill--ghost .hero-play__icon .ic { color: #fff; margin-left: 2px; }
+.hero-play__icon::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--blue); animation: heroPlayPulse 2s var(--ease) infinite; }
+.hero-play__time { font-family: "Geist Mono", monospace; font-size: 12px; font-weight: 500; color: var(--gray); padding-left: 10px; border-left: 1px solid var(--line); }
+.pill.hero-play:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px var(--blue), 0 14px 30px rgba(10,25,47,.14); }
+@keyframes heroPlayPulse { from { transform: scale(1); opacity: .7; } to { transform: scale(1.7); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hero-play__icon::after { animation: none; } }
