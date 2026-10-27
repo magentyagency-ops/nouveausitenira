@@ -1,0 +1,13 @@
+.git
+*.mov
+*copie.mp4
+index.pre-*.html
+index.backup.html
+js/*.pre-*.js
+js/*.backup.js
+css/*.pre-*.css
+css/*.backup.css
+imagelst.png
+Image ChatGPT*
+4ULaFYtbn*
+.env*
