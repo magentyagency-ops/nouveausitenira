@@ -1254,3 +1254,14 @@ button.pill {
   .notfound__ctas .btn__arrow { width: 48px; height: 48px; }
   .notfound__ctas .pill { justify-content: center; padding: 15px 20px; font-size: 15px; }
 }
+
+/* Language switch (added by js/i18n.js) */
+.lang-switch { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--sky-50); font-size: 13px; font-weight: 600; }
+.lang-switch a { padding: 6px 10px; border-radius: 999px; color: var(--gray); line-height: 1; transition: background .2s, color .2s; }
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a.is-active { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(10,25,47,.12); }
+@media (max-width: 380px) { .lang-switch a { padding: 6px 8px; } }
+
+/* The method reel is French only: English shows the written steps alone */
+html[lang="en"] .method__social { display: none; }
+html[lang="en"] .method__top { grid-template-columns: 1fr; }
